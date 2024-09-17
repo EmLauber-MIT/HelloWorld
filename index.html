@@ -1,2 +1,43 @@
 <h1>Hey Hello World</h1>
-<h2>How are you?</h1>
+<h2>How are you?</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <body>adding buttons</body>
+
+    <script>
+        // Create a new button element
+        const button = document.createElement('button');
+        // Set the button text
+        button.textContent = 'Click Me';
+        // Add the red-button class to the button
+        button.className = 'red-button';
+        // Append the button to the body
+        document.body.appendChild(button);
+
+        // Function to handle button click
+        function handleButtonClick() {
+            alert('Button was clicked!');
+        }
+
+        // Add event listener to the button
+        button.addEventListener('click', handleButtonClick);
+    </script>
+</body>
+</html>
+
+
